@@ -4,4 +4,4 @@ services:
   simulation:
     image: mysteriouscrawler/test
     ports:
-      - "3000:3000"
+      - '3000:3000'

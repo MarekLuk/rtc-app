@@ -1,63 +1,63 @@
 export interface AppConfig {
-    apiClient: {
-        baseUrl: string;
-        maxRetries: number;
-        retryDelay: number;
-    };
+  apiClient: {
+    baseUrl: string;
+    maxRetries: number;
+    retryDelay: number;
+  };
 }
 
 export interface ApiStateResponse {
-    odds: string;
+  odds: string;
 }
 
 export interface ApiMappingsResponse {
-    mappings: string;
+  mappings: string;
 }
 
 export interface ParsedMapping {
-    [key: string]: string;
+  [key: string]: string;
 }
 
 export interface ScoreData {
-    type: string;
-    home: string;
-    away: string;
+  type: string;
+  home: string;
+  away: string;
 }
 
 export interface CompetitorData {
-    type: 'HOME' | 'AWAY';
-    name: string;
+  type: 'HOME' | 'AWAY';
+  name: string;
 }
 
 export interface SportEvent {
-    id: string;
-    status: string;
-    scores: { [key: string]: ScoreData };
-    startTime: string;
-    sport: string;
-    competitors: {
-        HOME: CompetitorData;
-        AWAY: CompetitorData;
-    };
-    competition: string;
+  id: string;
+  status: string;
+  scores: { [key: string]: ScoreData };
+  startTime: string;
+  sport: string;
+  competitors: {
+    HOME: CompetitorData;
+    AWAY: CompetitorData;
+  };
+  competition: string;
 }
 
 export interface ApplicationState {
-    [eventId: string]: SportEvent;
+  [eventId: string]: SportEvent;
 }
 
 export interface RawSportEventData {
-    id: string;
-    sportId: string;
-    competitionId: string;
-    startTime: string;
-    homeCompetitorId: string;
-    awayCompetitorId: string;
-    statusId: string;
-    scores: string;
+  id: string;
+  sportId: string;
+  competitionId: string;
+  startTime: string;
+  homeCompetitorId: string;
+  awayCompetitorId: string;
+  statusId: string;
+  scores: string;
 }
 
 export interface SyncedApiData {
-    state: ApiStateResponse;
-    mappings: ApiMappingsResponse;
+  state: ApiStateResponse;
+  mappings: ApiMappingsResponse;
 }

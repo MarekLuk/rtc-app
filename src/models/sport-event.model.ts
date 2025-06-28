@@ -11,7 +11,7 @@ export class SportEventModel {
       const homeCompetitorName = mappings[rawData.homeCompetitorId];
       const awayCompetitorName = mappings[rawData.awayCompetitorId];
       const status = mappings[rawData.statusId];
-    
+
       if (
         !sport ||
         !competition ||
