@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { StateManagerService } from '../../src/services/state-manager.service';
-import type { SportEvent, RawSportEventData } from '../../src/types';
+import type { SportEvent} from '../../src/types';
 import { LoggerUtil } from '../../src/utils/logger.util';
 
 const consoleSpy = {
