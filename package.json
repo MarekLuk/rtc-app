@@ -10,7 +10,6 @@
     "test": "vitest run --coverage",
     "test:rof": "vitest run --coverage --coverage.reportOnFailure",
     "test:watch": "vitest",
-    "test:ui": "vitest --ui",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
