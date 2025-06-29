@@ -5,3 +5,14 @@ services:
     image: mysteriouscrawler/test
     ports:
       - '3000:3000'
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3001'
+    environment:
+      - API_BASE_URL=http://simulation:3000
+    depends_on:
+      - simulation
