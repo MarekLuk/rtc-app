@@ -12,9 +12,9 @@
 
 ## Docker
 
-Build and run (no cache): `docker compose build --no-cache` `docker compose up` command.
-Run (with cache):`docker compose up` command.  
-The API will be available at http://localhost:3001.
+- Build and run (no cache): `docker compose build --no-cache` and `docker compose up` command.
+- Run (with cache):`docker compose up` command.  
+- The API will be available at http://localhost:3001.
 
 ## Scripts
 
@@ -30,7 +30,7 @@ The API will be available at http://localhost:3001.
 ## Testing
 
 Tests are written with Vitest.
-`npm test`
+- `npm test`
 
 ## Environment Variables
 
