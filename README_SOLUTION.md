@@ -18,14 +18,14 @@ The API will be available at http://localhost:3001.
 
 ## Scripts
 
-`npm run build` Compile TypeScript into `dist/`
-`npm start` Run the compiled code
-`npm run dev` Build and run in development mode
-`npm test` Run tests with coverage
-`npm run test:rof` Run tests and show coverage only on failure
-`npm run test:watch` Run Vitest in watch mode
-`npm run format` Format code with Prettier
-`npm run format:check` Check formatting without rewriting files
+- `npm run build` Compile TypeScript into `dist/`
+- `npm start` Run the compiled code
+- `npm run dev` Build and run in development mode
+- `npm test` Run tests with coverage
+- `npm run test:rof` Run tests and show coverage only on failure
+- `npm run test:watch` Run Vitest in watch mode
+- `npm run format` Format code with Prettier
+- `npm run format:check` Check formatting without rewriting files
 
 ## Testing
 
